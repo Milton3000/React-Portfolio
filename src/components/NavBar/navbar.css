@@ -1,4 +1,5 @@
 .navbar {
+    background: rgb(30, 30, 30);
     height: 5rem;
     width: 100vw;
     max-width: 75rem;
@@ -46,4 +47,53 @@
     height: 1rem;
     width: 1rem;
     margin: 1rem;
+}
+
+.active {
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.burgerMenu {
+display: none;
+object-fit: cover;
+height: 1.8rem;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+
+.listItem {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background: rgb(30, 30, 30);
+}
+
+/* if the screen reaches less than 720 pixels, it will add the css below */
+
+/* Verkar vara 649 pixels inte 720, varför?  */
+
+@media screen and (max-width:720px) {
+    .burgerMenu {
+        display: flex;
+    }
+    .desktopMenu {
+        display: none;
+    }
+    .desktopMenuBtn {
+        display: none;
+    }
 }
