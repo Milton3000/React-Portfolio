@@ -69,12 +69,26 @@ font-size: 1rem;
 }
 
 .submitBtn {
-    background: white;
+    background: linear-gradient(to right, #87772b, #f9d423); /* Gradient background */
+    color: white; /* Text color */
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 1rem; /* Reduced border radius */
     margin: 2rem;
-    padding: 0.75rem 3.5rem;
+    padding: 0.5rem 2rem; /* Reduced padding */
+    font-size: 0.9rem; /* Reduced font size */
+    font-weight: bold; /* Font weight */
+    cursor: pointer; /* Cursor on hover */
+    transition: background 0.3s ease; /* Smooth background transition */
 }
+
+.submitBtn:hover {
+    background: linear-gradient(to right, #ff4e50, #f9d423); /* Gradient background on hover */
+}
+
+.submitBtn:focus {
+    outline: none; /* Remove focus outline */
+}
+
 
 .links {
 display: flex;
