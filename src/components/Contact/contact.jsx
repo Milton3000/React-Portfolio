@@ -1,14 +1,14 @@
 import React, { useRef } from 'react';
 import "./contact.css";
-import Walmart from "../../assets/walmart.png";
-import Adobe from "../../assets/adobe.png";
-import Microsoft from "../../assets/microsoft.png";
-import Facebook from "../../assets/facebook.png";
 import InstagramIcon from "../../assets/instagram.png";
 import emailjs from '@emailjs/browser';
 import Button from 'react-bootstrap/Button';
 import GitHub3 from '../../assets/GitHub3.png';
 import Linkedin from '../../assets/Linkedin.png';
+import Motiv2 from '../../assets/Motiv2.png';
+import Motiv6 from '../../assets/Motiv6.png';
+import Motiv7 from '../../assets/Motiv7.png';
+import Motiv5 from '../../assets/Motiv5.png';
 
 const Contact = () => {
   const form = useRef();
@@ -36,21 +36,20 @@ const Contact = () => {
       <div id="clients">
         <h1 className="contactPageTitle">My Clients</h1>
         <p className="clientDesc">
-          I have the opportunity to work with a diverse group of companies.
-          Some of the notable companies I have worked with includes
+          Unfortunately I haven't been able to work with any clients, being a student and all, so here are some images of my dog instead of my clients.
         </p>
         <div className="clientImgs">
 
           {/* ÄNDRA TILL PALLPOOLEN SENARE */}
-          <img src={Walmart} alt="Clients" className="clientImg" />
-          <img src={Adobe} alt="Clients" className="clientImg" />
-          <img src={Microsoft} alt="Clients" className="clientImg" />
-          <img src={Facebook} alt="Clients" className="clientImg" />
+          <img src={Motiv2} alt="Clients" className="clientImg" />
+          <img src={Motiv6} alt="Clients" className="clientImg" />
+          <img src={Motiv7} alt="Clients" className="clientImg" />
+          <img src={Motiv5} alt="Clients" className="clientImg" />
         </div>
       </div>
       <div id="contact">
         <h1 className="contactPageTitle"> Contact Me </h1>
-        <span className="contactDesc">Please fill out the form below to discuss any work opportunities. </span>
+        <span className="contactDesc">Please fill out the form below if you have any questions or if you'd like to discuss any work opportunities. </span>
         <form className="contactForm" ref={form} onSubmit={sendEmail}>
           <input type="text" className="name" placeholder='Your Name' name='from_name' required />
           <input type="email" className="email" placeholder='Your Email' name='your_email' required />

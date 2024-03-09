@@ -3,21 +3,40 @@
     height: 5rem;
     width: 100vw;
     max-width: 75rem;
-    margin: 0 auto;
-    padding: 1rem 2rem;
+    margin: 0 auto; /* Center the navbar horizontally */
+    padding: 1rem 1.5rem; /* Adjust padding as needed */
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
     z-index: 3;
-}
+  }
+  
 
 .logo {
-    object-fit: cover;
-    height: 3rem;
-    width: 4rem;
+  border-radius: 37%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  object-fit: contain;
+  height: 4.5rem;
+  width: 5rem;
+  margin-right: 1rem; /* Adjust spacing between the logo and other elements */
 }
+
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    position: relative; 
+  }
+  
+  .logoText {
+    font-size: 0.6rem;
+    color: white;
+    margin-left: -0.5 rem;
+    margin-top: 2.5rem;
+  }
 
 .desktopMenuListItem {
     margin: 1rem;
@@ -73,7 +92,15 @@ object-fit: cover;
 height: 1.8rem;
 }
 
-.navMenu {
+.burgerMenu:hover {
+    cursor: pointer;
+  }
+
+  .navMenu:hover {
+    cursor: pointer;
+  }
+
+  .navMenu {
     position: absolute;
     top: 4rem;
     right: 2rem;
@@ -82,23 +109,26 @@ height: 1.8rem;
     flex-direction: column;
     padding: 0.5rem;
     height: fit-content;
-    min-width: 15rem;
+    min-width: 8rem; 
     background: rgb(40, 40, 40);
-    border-radius: 1rem;
-}
-
+    border-radius: 1rem; 
+  }
 .listItem {
     color: white;
-    padding: 0.5rem 3rem;
+    padding: 0.3rem 2rem; 
     margin: 0.25rem;
     background: rgb(30, 30, 30);
-}
+    font-size: 0.8rem; 
+  }
+.listItem:hover {
+    background: rgb(50, 50, 50);
+  }
 
 /* if the screen reaches less than 720 pixels, it will add the css below */
 
 /* Verkar vara 649 pixels inte 720, varför?  */
 
-@media screen and (max-width:720px) {
+@media screen and (max-width: 720px) {
     .burgerMenu {
         display: flex;
     }
@@ -109,3 +139,9 @@ height: 1.8rem;
         display: none;
     }
 }
+
+@media screen and (max-width: 720px) {
+    .logo {
+      margin-left: 0; /* Adjust as needed */
+    }
+  }

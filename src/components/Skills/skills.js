@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section id="skills">
         <span className="skillTitle"> What I do </span>
-        <span className="skillDesc">I am a skilled fullstack developer with experience in creating <br/> visually appealing and user friendly websites. <br/> I am proficient in HTML, CSS, Javascript, React, MongoDB</span>
+        <span className="skillDesc">I am a fullstack developer with experience in creating <br/> visually appealing and user friendly websites. <br/> I am proficient in HTML, CSS, Javascript, React, SQL & MongoDB</span>
         <div className="skillBars">
 
             <div className="skillBar">
